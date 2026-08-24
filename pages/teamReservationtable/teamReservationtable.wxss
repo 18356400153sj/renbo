@@ -1,0 +1,26 @@
+/* pages/teamReservationtable/teamReservationtable.wxss */
+.title {
+    margin-top: 50rpx;
+    margin-left: 10rpx;
+    font-size: 50rpx;
+}
+
+.miniTitle{
+    margin-left: 5%;
+    margin-top: 120rpx;
+    font-size: 40rpx;
+    line-height: 80rpx;
+}
+
+.message{
+    margin-left: 5%;
+    font-size: 30rpx;
+    line-height: 50rpx;
+}
+
+.message2{
+    margin-top: 100rpx;
+    margin-bottom: 100rpx;
+    margin-left: 20%;
+    line-height: 50rpx;
+}

@@ -4,59 +4,91 @@ page {
   display: flex;
   flex-direction: column;
 }
-.scrollarea {
-  flex: 1;
-  overflow-y: hidden;
+
+.notice{
+    background-color: rgb(240, 235, 230);
 }
 
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
-  width: 80%;
+.text{
+    position: absolute;
+    z-index: 1;
 }
 
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.backgroundPicture{
+    position:absolute;
+    z-index: 0;
+    width: 100%;
+    height: 68%;
+    bottom: 0;
+    color:#FFF8DC;
 }
 
-.usermotto {
-  margin-top: 200px;
+.title {
+    display: flex;
+    margin-top: 20rpx;
+    margin-left: 35%;
+    width: 30%;
+    background-color: bisque;
+    font-size: 40rpx;
 }
 
-.avatar-wrapper {
-  padding: 0;
-  width: 56px !important;
-  border-radius: 8px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+.button{
+    display:flex;
+    flex-direction: row;
 }
 
-.avatar {
-  display: block;
-  width: 56px;
-  height: 56px;
+.weekendtab {
+    display: flex;
+    border-left: 1%;
+    border-right: 1%;
+    background-color: bisque;
+    margin-top: 30rpx;
+    margin-bottom: 5rpx;
+}
+.weekendtab>text{
+    display:flex;
+    flex-basis: 14%;
+    align-items: center;
+    justify-content: center;
 }
 
-.nickname-wrapper {
-  display: flex;
-  width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-  border-top: .5px solid rgba(0, 0, 0, 0.1);
-  border-bottom: .5px solid rgba(0, 0, 0, 0.1);
-  color: black;
+.canlender{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.nickname-label {
-  width: 105px;
+.canlenderblock{
+    display:flex;
+    flex-direction: column;
+    width: 13%;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 1%;
 }
 
-.nickname-input {
-  flex: 1;
+.collapse {
+    position: relative;
+    margin: 20rpx;
+}
+
+.header {
+    background: #007aff;
+    padding: 20rpx;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8rpx;
+}
+
+.content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 20rpx;
+    margin-top: 10rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
+    border-radius: 8rpx;
+    z-index: 999;
 }

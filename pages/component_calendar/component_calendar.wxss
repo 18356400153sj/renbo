@@ -1,0 +1,21 @@
+/* pages/component_calendar/component_calendar.wxss */
+.container{
+    width: 97rpx;
+    text-align: center;
+}
+
+.unknown{
+    background-color: grey;
+}
+
+.open{
+    background-color: green;
+}
+
+.closed{
+    background-color: red;
+}
+
+transparent{
+    background-color: transparent;
+}

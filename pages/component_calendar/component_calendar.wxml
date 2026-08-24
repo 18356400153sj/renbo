@@ -1,0 +1,21 @@
+<!--pages/component_calendar/component_calendar.wxml-->
+<!-- 一个组件，根据传入的状态不同，显示不同的颜色和点击事件 -->
+<view class="container">
+<view wx:if="{{openState === 'open'}}"
+class="open" bind:tap="open">
+    <slot></slot>
+</view>
+
+<view wx:elif="{{openState==='closed'}}"
+class="closed" bind:tap="closed">
+    <slot></slot>
+</view>
+
+<view wx:elif="{{openState==='Unknown'}}"
+class="unknown" bind:tap="unknown">
+    <slot></slot>
+</view>
+
+<view wx:else class="transparent">
+</view>
+</view>

@@ -1,27 +1,39 @@
 <!--index.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    <view class="userinfo">
-      <block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
-        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
-        </button>
-        <view class="nickname-wrapper">
-          <text class="nickname-label">昵称</text>
-          <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
-        </view>
-      </block>
-      <block wx:elif="{{!hasUserInfo}}">
-        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-        <view wx:else> 请使用2.10.4及以上版本基础库 </view>
-      </block>
-      <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      </block>
-    </view>
-    <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
-    </view>
+<view class="text">
+<!-- 没法用的代码，注释掉
+    <view class="collapse">
+  <view class="header" wx:if="{{expanded}}">
+    <text>{{content}}</text>
   </view>
-</scroll-view>
+  <view bindtap="toggle">公告：{{expanded ? '收起' : '点击展开'}}{{expanded ? '▲' : '▼'}}
+  </view>
+</view> 
+-->
+<view>公告：寒暑假期间，浙江大学人体博物馆不开放</view>
+<view><text class="title">{{year}}年{{month}}月</text></view>
+<view class="button">
+    <button bind:tap="lastmonth" size="mini">《</button>
+    <button bind:tap="nextmonth" size="mini">》</button>
+</view>
+<view class="weekendtab">
+    <text>周日</text>
+    <text>周一</text>
+    <text>周二</text>
+    <text>周三</text>
+    <text>周四</text>
+    <text>周五</text>
+    <text>周六</text>
+</view>
+
+<view class="canlender">
+<view wx:for="{{days}}" class="canlenderblock">
+    <component_calendar openState='{{openStateThisMonth[index]}}'>
+        {{days[index]}}
+    </component_calendar>
+</view>
+
+
+</view>
+</view>
+
+<image src="/images/background.jpg" class="backgroundPicture"/>

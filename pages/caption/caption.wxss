@@ -1,0 +1,18 @@
+/* pages/caption/caption.wxss */
+
+.page{
+    height: 100vh;
+}
+
+.half{
+    width:96%;
+    height: 46vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color:rgb(205, 228, 182);
+    text-align: center;
+    line-height: 50vh;
+    font-size: 8vh;
+}

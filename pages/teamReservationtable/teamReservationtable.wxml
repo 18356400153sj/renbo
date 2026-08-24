@@ -1,0 +1,26 @@
+<!--pages/teamReservationtable/teamReservationtable.wxml-->
+<view><text class="title">浙江大学人体博物馆团队预约表\n</text></view>
+<view><text class="miniTitle">温馨提示：\n</text></view>
+<view class="message"><text>1.本页面仅为团队入馆预约，个人入馆预约请至“人博日历-点击日期-个人预约”或现场扫码登记入馆
+2.团队规模应不小于10人，人数小于10人时请直接通过个人预约或现场扫码登记入馆
+3.建议团队每次入馆人数以20~30人为宜，人数较多的团队请组织分批有序入馆
+4.团队入校请自行提前与学校相关部门确认\n</text></view>
+<view><text class="miniTitle">参观要求:</text></view>
+<view class="message"><text>
+一、团体入馆参观需先登记，请提前三日预约登记以及在工作日电话联系确认
+二、入馆参观时请提交纸质版申请表格（详情咨询公众号）
+三、请听从讲解教师的安排，遵守各项规定和要求
+四、本馆收藏标本为医学人体标本，参观前请适当调整心态
+五、未成年人请在家长陪同下参观，建议14周岁以上
+六、参观请保持秩序，请勿做喧哗、尖叫、恐吓等影响他人的行为
+七、馆内禁止吸烟、饮食，请勿随地吐痰，乱扔废弃物
+八、请勿触摸、移动标本
+九、未经许可，严禁拍照和摄影\n</text></view>
+<view class="message2"><text>开放时间：
+上午09:00~11:30
+下午13:00~16:00
+联系方式：
+0571-88208318（工作日）
+0571-88208321（工作日）\n</text></view>
+
+<image src="/images/浙江大学医学人体博物馆团体入馆登记表.png" mode="aspectFit" show-menu-by-longpress="true"/>

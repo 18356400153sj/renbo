@@ -1,0 +1,10 @@
+page{
+
+}
+
+.empty{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-top: 200rpx;
+}

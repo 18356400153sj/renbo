@@ -1,0 +1,5 @@
+<!--pages/caption/caption.wxml-->
+<view class="page">
+    <view class="half" bind:tap="caption_firstfloor">一楼</view>
+    <view class="half" bind:tap="caption_secondfloor">二楼</view>
+</view>

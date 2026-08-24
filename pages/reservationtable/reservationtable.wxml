@@ -1,0 +1,2 @@
+<!--pages/reservationtable/reservationtable.wxml-->
+<image src="/images/浙江大学人体博物馆入馆登记表.png" mode="aspectFit" class="empty" show-menu-by-longpress="{{true}}"/>
